@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Me - Janiesha Justine Conise</title>
+        <style>
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f8f9fa;
+                color: #333;
+                line-height: 1.6;
+            }
+            nav {
+                background-color: #2c3e50;
+                color: white;
+                padding: 1rem 2rem;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            }
+            nav .container {
+                max-width: 1000px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            nav h1 {
+                font-size: 1.5rem;
+                font-weight: 300;
+            }
+            nav a {
+                color: white;
+                text-decoration: none;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+            nav a:hover {
+                background-color: rgba(255, 255, 255, 0.1);
+            }
+            .container {
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 2rem;
+            }
+            .welcome-section {
+                text-align: center;
+                margin-bottom: 3rem;
+            }
+            .welcome-section h1 {
+                color: #2c3e50;
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+            .cards-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 2rem;
+                margin-bottom: 3rem;
+            }
+            .card {
+                background-color: white;
+                border-radius: 10px;
+                padding: 2rem;
+                box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                transition: transform 0.3s ease;
+            }
+            .card:hover {
+                transform: translateY(-5px);
+            }
+            .card h2 {
+                color: #2c3e50;
+                margin-bottom: 1.5rem;
+                font-size: 1.8rem;
+                text-align: center;
+                border-bottom: 2px solid #3498db;
+                padding-bottom: 0.5rem;
+            }
+            .card h4 {
+                color: #2c3e50;
+                margin: 2rem 0 1rem 0;
+                font-size: 1.6em;
+                text-align: center;
+            }
+            .hobbies-list, .websites-list {
+                list-style: none;
+                padding: 0;
+            }
+            .hobbies-list li, .websites-list li {
+                padding: 0.8rem 0;
+                border-bottom: 1px solid #eee;
+            }
+            .websites-list li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .websites-list li a {
+                color: #3498db;
+                text-decoration: none;
+                font-weight: 600;
+                padding: 6px 12px;
+                border-radius: 20px;
+                background-color: #ecf0f1;
+                transition: background-color 0.3s ease;
+            }
+            .websites-list li a:hover {
+                background-color: #3498db;
+                color: white;
+                text-decoration: none;
+            }
+            .contact-info {
+                text-align: center;
+            }
+            .contact-info h6 {
+                color: #333;
+                font-style: normal;
+                font-size: small;
+                margin: 0.5rem 0;
+            }
+            footer {
+                background-color: #2c3e50;
+                color: white;
+                text-align: center;
+                padding: 2rem 0;
+            }
+            @media (max-width: 768px) {
+                .cards-container {
+                    grid-template-columns: 1fr;
+                }
+                .welcome-section h1 {
+                    font-size: 2rem;
+                }
+                nav .container {
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+                .container {
+                    padding: 1rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <div class="container">
+                <h1>About Me</h1>
+                <a href="index.html">Home</a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="welcome-section">
+                <h1>You're here! </h1>
+            </div>
+
+            <div class="cards-container">
+                <div class="card">
+                    <h2>My Hobbies</h2>
+                    <ul class="hobbies-list">
+                        <li>Watching Kdrama</li>
+                        <li>Watching Horror Movies</li>
+                        <li>Writing poetry</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h2>My Favorite Websites</h2>
+                    <ol class="websites-list">
+                        <li>Netflix <a href="https://www.netflix.com/" target="_blank">Visit</a></li>
+                        <li>Youtube <a href="https://www.youtube.com/" target="_blank">Visit</a></li>
+                        <li>Facebook <a href="https://www.facebook.com/" target="_blank">Visit</a></li>
+                    </ol>
+                </div>
+
+                <div class="card">
+                    <h4>My Contact Information</h4>
+                    <div class="contact-info">
+                        <h6>Email: conisejc@students.national-u.edu.ph</h6>
+                        <h6>Facebook: Janiesha Justine Conise</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2026 Janiesha Justine Conise. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>
